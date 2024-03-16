@@ -52,7 +52,7 @@ public class EmployeeRestController {
     //expose mapping PUT /employees = update existing employee
 
     @PutMapping("/employees")
-    public Employee updaateEmployee(@RequestBody Employee theEmployee) {
+    public Employee updateEmployee(@RequestBody Employee theEmployee) {
 
         Employee dbEmployee = employeeService.save(theEmployee);
 
